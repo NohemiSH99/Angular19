@@ -1,0 +1,35 @@
+.border-button{
+    border-radius: 15px;
+    border: none;
+    color: white;
+    width: 100px;
+}
+
+button .text{
+    position: relative;
+    bottom: 6px;
+    margin-left: 5px;
+}
+
+button{
+    cursor: pointer;
+}
+
+.success{
+    background-color: green;
+}
+
+.button-red{
+    background-color: red;
+}
+
+.height-container{
+    height: 63vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 20px;
+}
+
+:host ::ng-deep .mat-mdc-row{
+    height: 46px;
+}

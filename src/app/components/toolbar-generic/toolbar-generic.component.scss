@@ -1,0 +1,13 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.color-background{
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+:host ::ng-deep button{
+    border: none;
+    background: none;
+}

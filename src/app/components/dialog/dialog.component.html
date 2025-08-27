@@ -1,0 +1,22 @@
+<h4 mat-dialog-title>{{title}}</h4>
+<mat-dialog-content>
+  {{question}}
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button 
+        mat-button 
+        mat-dialog-close
+        (click)="cancel()"
+    >
+        {{optionFalse}}
+    </button>
+    <button 
+        mat-button 
+        mat-dialog-close 
+        cdkFocusInitial 
+        class="ml-2"
+        (click)="accept(this.data.row.id)"
+        >
+        {{optionTrue}}
+    </button>
+</mat-dialog-actions>

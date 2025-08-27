@@ -1,0 +1,17 @@
+<div class="container-fluid d-flex">
+    <div class="row d-flex">
+        <app-toolbar-generic 
+            [title]="title">
+        </app-toolbar-generic>
+    </div>
+    <div class="row d-flex">
+        <mat-card class="example-card" appearance="outlined">
+            <mat-card-content>
+                <app-table-generic 
+                    (clickButtonEmmiter)="clickStatus($event)"
+                    [tableConfig]="tableConfig"> 
+                </app-table-generic>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
